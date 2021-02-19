@@ -2,6 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './components/css/index.css'
+import './components/css/app.css'
 import App from './components/app/';
 // import reportWebVitals from './reportWebVitals';
 

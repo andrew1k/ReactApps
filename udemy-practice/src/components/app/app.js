@@ -12,7 +12,7 @@ import '../css/index.css'
 
 const App = () => {
     return (
-        <div className="App">
+        <div className="app">
             <AppHeader/>
             <div className="search-panel d-flex">
                 <SearchPanel/>

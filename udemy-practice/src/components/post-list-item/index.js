@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/post-list-item.css'
+import '../css/index.css'
 
 const PostListItem = () => {
     return (

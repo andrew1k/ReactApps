@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/post-status-filter.css'
+import '../css/index.css'
 
 const PostStatusFilter = () => {
     return (

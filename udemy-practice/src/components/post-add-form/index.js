@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/post-add-form.css'
+import '../css/index.css'
 
 const PostAddForm = () => {
     return (
