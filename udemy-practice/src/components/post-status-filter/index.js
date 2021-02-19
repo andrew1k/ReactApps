@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/post-status-filter.css'
 
 const PostStatusFilter = () => {
     return (

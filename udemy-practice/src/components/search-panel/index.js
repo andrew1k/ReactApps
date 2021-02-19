@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/search-panel.css'
 
 const SearchPanel = () => {
     return (
