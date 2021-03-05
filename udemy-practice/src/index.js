@@ -1,28 +1,50 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './components/css/index.css'
 import './components/css/app.css'
-// import App from './components/app/';
-// import reportWebVitals from './reportWebVitals';
+import App from './components/app/';
+import reportWebVitals from './reportWebVitals';
+
+
+class WhoAmI extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            years: 26,
+        }
+    }
+    render() {
+        const {name, surname, link} = this.props
+        const {years} = this.state
+        return (
+            // <React.Fragment>
+            <> 
+    
+                <h1>My name is {name}, surname - {surname}, years: {this.state.years}</h1>
+                <a href={link}>My Profile</a>
+            </>
+            // </React.Fragment>
+        ) 
+    }
+}
 
 
 
-function WhoAmI(props) {
+
+const All = () => {
     return (
-        // <React.Fragment>
-        <> 
-
-            <h1>My name is {props.name}, surname - {props.surname}</h1>
-            <a href={props.link}>My Profile</a>
+        <>
+        <WhoAmI name='Meg' surname='Root' link='rewand.netlify.app' />
+        <WhoAmI name='Rew' surname='And' link='facebook.com' />
+        <WhoAmI name='Andy' surname='Ko' link='duckduckgo.com' />
         </>
-        // </React.Fragment>
     )
 }
 
-ReactDOM.render(<WhoAmI name='Meg' surname='Root' link='rewand.netlify.app' />, document.getElementById('root')
+ReactDOM.render(<All />, document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
